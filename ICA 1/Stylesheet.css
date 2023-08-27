@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
 :root {
   --color: #000000;
 }
 
+body{
+  background-color: var(--color);
+}
+
 header {
-  width: 95vw;
-  height: 10vh;
+  width: 100%;
+  height: 20vh;
   color: white;
-  padding: 50px;
   font-weight: 100;
   background-color: var(--color);
   display: flex;
@@ -14,9 +19,66 @@ header {
   align-items: center;
 }
 
+.name{
+  width:282;
+  margin:10px;
+  display: inline-flex;
+  vertical-align: baseline;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2{
+  margin: 10px;
+  color:rgb(116, 70, 161);
+}
+
+h1{
+  font-size: 50px;
+}
+
+h2{
+  font-size: 40px;
+}
+
+.menu{
+  width:200px;
+  margin:10px;
+  display: inline-flex;
+  vertical-align: baseline;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav{
+  font: normal normal 25px "Irish Grover-Regular", Helvetica;
+  letter-spacing: 0;
+  line-height: normal;
+  background-color: rgba(35, 2, 68, 10);
+  text-align:center;
+  border: 3px solid rgb(116, 70, 161);
+  border-radius: 10px;
+}
+
+.tab{
+  margin:5px;
+  padding:14px 10px;
+  width: auto;
+  height:auto;
+}
+
+.tab:hover {
+  background-color: rgb(73, 34, 111);
+}
+
+a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
 .blank {
-  width: 100vw;
-  min-height: 10vh;
+  width: 100%;
+  min-height: 75px;
   background-color: var(--color);
   background-size: cover;
   justify-content: center;
@@ -26,95 +88,292 @@ header {
 }
 
 .text-style{
-  color: white;
-  font-family: "Comic Sans MS";
-  font-size: 20px;
+  font-family: "Irish Grover", Helvetica;
   font-style: normal;
   font-weight: 400;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0;
   line-height: normal;
-  background-color: rgb(35, 2, 68);
-  padding: 20px;
-  margin: 0;
-  border-radius: 20px;
+  background-color: rgba(255, 255, 255, .25);
+  padding: 10px;
+  margin: 10px;
+  border: 2px;
+  border-color:#ffffff;
+  border-radius: 15px;
 }
 
-/*.para-1 {
+.para-1 {
+  width:220px;
+  height:18px;
+  position: absolute;
+  top:250px;
+  bottom:846px;
+  left:900px;
+  right:720px;
 }
 
 .para-2 {
-
+  width:171px;
+  height:18px;
+  position: absolute;
+  top:455px;
+  bottom:846px;
+  left:780px;
+  right:720px;
 }
 
 .para-3 {
-
+  width:163px;
+  height:18px;
+  position: absolute;
+  top:1675px;
+  bottom:846px;
+  left:900px;
+  right:720px;
 }
 
 .para-4 {
-
+  width:182px;
+  height:18px;
+  position: absolute;
+  top:2550px;
+  bottom:846px;
+  left:690px;
+  right:720px;
 }
 
 .para-5  { 
-
+  width:250px;
+  height:18px;
+  position: absolute;
+  top:3375px;
+  bottom:846px;
+  left:250px;
+  right:720px;
 }
 
 .para-6  { 
-
+  width:135px;
+  height:18px;
+  position: absolute;
+  top:3800px;
+  bottom:846px;
+  left:900px;
+  right:720px;
 }
 
 .para-7  { 
-
+  width:165px;
+  height:18px;
+  position: absolute;
+  top:3845px;
+  bottom:846px;
+  left:950px;
+  right:720px;
 }
 
 .para-8  { 
-
+  width:130px;
+  height:18px;
+  position: absolute;
+  top:5200px;
+  bottom:846px;
+  left:270px;
+  right:720px;
 }
 
 .para-9  { 
-
+  width:105px;
+  height:18px;
+  position: absolute;
+  top:4700px;
+  bottom:846px;
+  left:1150px;
+  right:720px;
 }
 
 .para-10 {
-
+  width:185px;
+  height:35px;
+  position: absolute;
+  top:5525px;
+  bottom:846px;
+  left:823px;
+  right:720px;
 }
 
 .para-11 {
-
+  width:155px;
+  height:18px;
+  position: absolute;
+  top:5590px;
+  bottom:846px;
+  left:940px;
+  right:720px;
 }
 
 .para-12 {
-
+  width:240px;
+  height:18px;
+  position: absolute;
+  top:6350px;
+  bottom:846px;
+  left:140px;
+  right:720px;
 }
 
 .para-13 {
-
+  width:195px;
+  height:18px;
+  position: absolute;
+  top:7800px;
+  bottom:846px;
+  left:200px;
+  right:720px;
 }
 
 .para-14 {
-
+  width:75px;
+  height:18px;
+  position: absolute;
+  top:7250px;
+  bottom:846px;
+  left:1150px;
+  right:720px;
 }
 
 .para-15 {
-
+  width:190px;
+  height:18px;
+  position: absolute;
+  top:8700px;
+  bottom:846px;
+  left:400px;
+  right:720px;
 }
 
 .para-16 {
-
+  width:225px;
+  height:18px;
+  position: absolute;
+  top:9550px;
+  bottom:846px;
+  left:400px;
+  right:720px;
 }
 
 .para-17 {
-
+  width:180px;
+  height:18px;
+  position: absolute;
+  top:10390px;
+  bottom:846px;
+  left:1050px;
+  right:720px;
 }
 
 .para-18 {
-
+  width:210px;
+  height:18px;
+  position: absolute;
+  top:10130px;
+  bottom:846px;
+  left:400px;
+  right:720px;
 }
 
 .para-19 {
+  width:240px;
+  height:18px;
+  position: absolute;
+  top:10930px;
+  bottom:846px;
+  left:800px;
+  right:720px;
+}
 
-} */
+.para-20 {
+  width:125px;
+  height:18px;
+  position: absolute;
+  top:10980px;
+  bottom:846px;
+  left:950px;
+  right:720px;
+}
+
+.para-21 {
+  width:140px;
+  height:18px;
+  position: absolute;
+  top:12155px;
+  bottom:846px;
+  left:250px;
+  right:720px;
+}
+
+.para-22 {
+  width:35px;
+  height:18px;
+  position: absolute;
+  top:12980px;
+  bottom:846px;
+  left:950px;
+  right:720px;
+}
+
+.para-23 {
+  width:180px;
+  height:18px;
+  position: absolute;
+  top:13025px;
+  bottom:846px;
+  left:970px;
+  right:720px;
+}
+
+.para-24 {
+  width:95px;
+  height:18px;
+  position: absolute;
+  top:13420px;
+  bottom:846px;
+  left:1180px;
+  right:720px;
+}
+
+.para-25 {
+  width:260px;
+  height:18px;
+  position: absolute;
+  top:14780px;
+  bottom:846px;
+  left:250px;
+  right:720px;
+}
+
+.para-26 {
+  width:235px;
+  height:18px;
+  position: absolute;
+  top:15210px;
+  bottom:846px;
+  left:850px;
+  right:720px;
+}
+
+.para-27 {
+  width:170px;
+  height:18px;
+  position: absolute;
+  top:16200px;
+  bottom:846px;
+  left:800px;
+  right:720px;
+}
 
 .bg-style {
-  /*width: 100vw;*/
   min-height: 800px;
   background-attachment: fixed;
   background-position: center;
@@ -127,10 +386,10 @@ header {
 .bg-style:hover{
   display:flex;
   overflow: hidden;
-  animation-duration:5s;
+  animation-duration:20s;
   animation-delay: 2ms;
   animation-name:zoomIn;
-  animation-iteration-count:initial;
+  animation-iteration-count:infinite;
 }
 
 @keyframes zoomIn {
@@ -218,16 +477,6 @@ header {
   background-image: url("Pic\ 6.3.png");
 }
 
-.scroll-to-top {
-  width: 100px;
-  height: 40px;
-  color:rgb(254, 253, 255);
-  text-align:center;
-  border: 3px;
-  border-color:rgb(116, 70, 161) ;
-  border-width: 2px;
-  border-radius: 5px;
-  background-color:rgb(35, 2, 68);
-  padding:20px;
-  margin: auto;
-}
+/*.scroll-to-top {
+
+}*/
